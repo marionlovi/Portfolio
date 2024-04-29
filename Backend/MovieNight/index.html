@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/movie-logo.png" > 
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./img/movie-night.png" alt="" >   
+        </a>
+           <form role="search" id="form">
+                <input type="search" id="query" name="query" placeholder="Recherche un film..." />
+            </form>
+    </header>
+    <section id="menu">
+        <p id = "genre"> GENRE : </p>
+        <ul>
+            <li onclick="ActionMovies()" >Action</li> 
+            <li onclick="AventureMovies()" >Aventure</li> 
+            <li onclick="AnimationMovies()" >Animation</li>
+            <li onclick="ComedieMovies()" >Comédie</li>
+            <li onclick="CrimeMovies()" >Crime</li>
+            <li onclick="DocumentaireMovies()" >Documentaire</li>
+            <li onclick="DrameMovies()" >Drame</li> 
+            <li onclick="FamilialMovies()" >Familial</li>
+            <li onclick="FantastiqueMovies()" >Fantastique</li>
+            <li onclick="HistoriqueMovies()" >Historique</li>
+            <li onclick="HorreurMovies()" >Horreur</li>
+            <li onclick="MusicalMovies()" >Musical</li>
+            <li onclick="MystereMovies()" >Mystère</li>
+            <li onclick="RomanceMovies()" >Romance</li>
+            <li onclick="SFMovies()" >Science-Fiction</li>
+            <li onclick="TVMovies()" >Téléfilm</li>
+            <li onclick="ThrillerMovies()" >Thriller</li>
+            <li onclick="GuerreMovies()" >Guerre</li>
+            <li onclick="WesternMovies()" >Western</li>
+        </ul>
+    </section> 
+    <main>
+        <nav id="allMovies">
+        </nav>
+        <img onclick="chargeMore() " class="plusButton" src="./img/add.png"></img>
+    </main>
+</body>
+<script src="script.js"></script>
+</html> 

@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131720;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+
+header {
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #191C29;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    height: 100px; 
+    z-index: 2;
+    border-radius: 0 0 15px 0;
+}
+
+#menu {
+    padding-top: 50px;
+    background-color: #191C29;
+    position: fixed;
+    height: 100%;
+    width: 150px;
+    z-index: 1;
+    padding-left: 1rem;
+}
+
+main {
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h3 {
+    color: aliceblue;
+    grid-area: titre;
+    font-size: 15px;
+    width: 10rem;
+}
+
+header img {
+    width: 110PX;
+}
+
+form {
+    background-color: white;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 300px;
+    height: 43px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+input {
+    all: unset;
+    font: 15px system-ui;
+    color: #191C29;
+    height: 100%;
+    width: 100%;
+    padding: 6px 9px;
+}
+
+nav#allMovies {
+    overflow: auto;
+    margin-top: 100px ;
+    max-width: 100%;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    color: white;
+    text-align: start;
+    text-decoration: underline white;
+    text-transform: none;
+    font-size: 12px;
+    margin-left: 1rem;
+    text-shadow: #131720 1px 1px 1px;
+}
+
+li {
+    list-style-type: none;
+    text-align: justify;
+    color: white;
+    margin-top: 1rem;
+}
+
+li:hover {
+    font-weight: 900;
+}
+
+.Filmclassement h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 28px;
+    font-style: normal;
+    margin: 1rem auto 1rem 6rem;
+}
+
+.recherce {
+    margin: 2rem;
+    color: white;
+
+}
+
+.Filmclassement {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.MoviesContener {
+    padding-top: 2rem;
+    display: flex;
+    overflow-x: auto;
+    background-color: #191c29;;
+    border-radius: 2rem;
+    overflow-y: hidden;
+}
+
+.MoviesContener::-webkit-scrollbar {
+    color: transparent;
+}
+
+
+.card {                                                                                                                                                                                                                                                                       
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        'image'
+        'titre';
+    align-items: center;
+    justify-content: center; 
+    width: auto;
+}
+
+.thumbnail {
+    margin: auto;
+    padding: auto;
+    height: 15rem;
+    width: 10rem;
+    border-radius: 19px;
+    grid-area: image;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.div_title {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+    text-align: center;
+}
+
+
+.infos p {
+    margin: 1rem
+}
+
+.infos {
+    margin-bottom: 0;
+    font-size: 12px;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.718);
+    width: 10rem;
+    border-radius: 0 0 19px 19px;
+}
+
+.errorMessage {
+    margin: auto;
+    width: fit-content;
+    color: white;
+}
+
+.specificMovie {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.firstInfo {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.firstText {
+    margin: auto;
+}
+
+.similarMovies {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-top: 2rem;
+    overflow-y: hidden;
+}
+
+.similarMovies::-webkit-scrollbar {
+    color: transparent
+}
+
+p.contenu {
+    margin-top: 1rem;
+}
+
+h1.contenu {
+    font-size: 32px;
+    color: white;
+}
+
+.contenu {
+    font-size: 18px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.movieImage {
+    width: 8rem;
+    width: 24rem;
+}
+
+.plusButton {
+    cursor: pointer;
+    width: 5rem;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.accueil {
+    width: 100%;
+    height: 50rem;
+    /* overflow: hidden; */
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#tagline {
+    font-style: italic;
+    padding-left: 2rem;
+}
+
+.div_fullPage {
+    width: 100%;
+    overflow: hidden;
+}
+
+#sec_fullPage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    gap: 15px;
+    width: 100%;
+    overflow: hidden;
+
+}
+ #sec_fullPage .thumbnail{
+    overflow: hidden;
+    width: 12rem;
+    height: 18rem;
+}
+
+#sec_fullPage .infos {
+    height: 50%;
+    width: 12rem;
+    overflow: hidden;
+}
+.sect_tendance {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sect_tendance h1 {
+    font-size: 36px;
+    margin: 1rem;
+    font-style: italic;
+    color: white;
+    cursor: pointer;
+    text-shadow: #131720 1px 1px 1px;
+}
+
+
+.biggest {
+    width: 100%;
+    border-radius: 2rem;
+    height: 100%;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#genre {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.MovieInformations    {
+     display: flex;
+    margin-top: 2rem; 
+    position: absolute;
+    display: block;
+}
+
+#trendyToo {
+    background: none;
+    margin-top: auto;
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+#trendyToo .thumbnail {
+    min-width: 9rem; 
+    margin-right: 12px;
+}
+
+.titreDeTri {
+    margin-top: 1rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.moreLink {
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: inline;
+    height: fit-content;
+    width: fit-content;
+}
+
+.sect_moviesByX {
+    margin-top: 0;
+    position: fixed;
+    border: black 3px solid;
+    background-color: rgba(0, 0, 0, 0.56);
+    border-radius: 2rem;
+    justify-self: center;
+    width: 85%;
+    height: 75%;
+    overflow-y: auto;
+}
+
+.sect_moviesByX::-webkit-scrollbar {
+    color: transparent;
+}
+
+
+#div_moviesByX {
+    background: none;
+    width: 100%;
+    height: auto; 
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+
+#div_moviesByX .card {
+        width: calc(16.5% - 16px); 
+        height: 20rem;
+        margin: 8px;
+}
+
+#div_moviesByX .thumbnail{
+    width: 9rem;
+    height: 14rem;
+}
+
+#div_moviesByX .infos {
+    height: 85%;
+    width: 9rem;
+}
