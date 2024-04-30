@@ -2,7 +2,7 @@
 
 Portfolio Marion Lovisolo - B1 Programmation Ecole 89 - 
 
-Bienvenue sur mon portfolio ! Je suis Marion Lovisolo, étudiante en programmation à l'École 89, et ai eu l'occasion d'apprendre énormément cette année, notemment sur le développement logiciel et web. Ci-dessous, vous trouverez un aperçu de mes compétences et de certains projets que j'ai réalisés cette année :
+Bienvenue sur mon portfolio ! Je suis Marion Lovisolo, étudiante en programmation à l'École 89, et ai eu l'occasion d'apprendre énormément cette année, notamment sur le développement logiciel et web. Ci-dessous, vous trouverez un aperçu de mes compétences et de certains projets que j'ai réalisés cette année :
 
 I. Programmation et Algorithmie en C
 
