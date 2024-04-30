@@ -12,3 +12,7 @@ Travailler sur une carte en 2D comme celle qui suit en gérant la mémoire de ma
 - Arrêt du programme en l'absence de sortie pour éviter les boucles infinies.
 - Attribution de distances aux cases depuis le départ pour trouver le chemin le plus court.
   
+# Compétence apprise
+- Gestion des structure contenant de nombreuses données
+- Travail en équipe
+- Utiliser des coordonnées et les transformer en données de positions 
